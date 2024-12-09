@@ -11,9 +11,14 @@ Output: 'Se está bien'
 t= int (input('Introduzca los grados: '))
 
 if t<10:
-    print('Hace frío.')
+    subir_temperatura= 23 - t
+    calefacción_23grados= t + subir_temperatura
+    print('Hace frío. Hay que subir la calefacción {} grados'.format(subir_temperatura))
+    print("La calefacción ahora está a {} grados".format(calefacción_23grados))
 elif t>30:
-    print('Hace calor.')
+    bajar_temperatura= t - 15
+    aire_15grados= t - bajar_temperatura
+    print('Hace calor. Hay que poner el aire acondicionado para bajar {} grados'.format(bajar_temperatura))
+    print("El aire acondicionado ahora está a {} grados".format(aire_15grados))
 else:
     print('Se está bien')
-
